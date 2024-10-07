@@ -1,1 +1,1 @@
-![Pipeline](https://github.com/OWNER/REPOSITORY/actions/workflows/cy.yml/badge.svg)
+![Pipeline](https://github.com/romainsessa/m2i-api/actions/workflows/cy.yml/badge.svg)
