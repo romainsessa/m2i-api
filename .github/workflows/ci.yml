@@ -22,5 +22,5 @@ jobs:
     - name: Update Jacoco Site 
       uses: actions/upload-artifact@v4
       with:
-        name: my-artifact
-        path: target/site/jaococo
+        name: jacoco-report
+        path: ${{ github.workspace }}/target/site/jaococo
