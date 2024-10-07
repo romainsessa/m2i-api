@@ -29,6 +29,19 @@ public class HelloControllerTest {
 				.andReturn();		
 		String resultStr = result.getResponse().getContentAsString();
 		assertEquals("Hello World", resultStr);
-	}	
+	}
+	
+	@Test
+	public void testGetHome() throws Exception {
+		
+		MvcResult result = mockMvc
+				.perform(
+						MockMvcRequestBuilders.get("/"))
+				.andExpect(
+						MockMvcResultMatchers.status().isOk())
+				.andReturn();		
+		String resultStr = result.getResponse().getContentAsString();
+		assertEquals("Home Page", resultStr);
+	}
 
 }
