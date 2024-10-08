@@ -29,6 +29,9 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+		<sonar.organization>romainsessa-1</sonar.organization>
+		<sonar.projectKey>romainsessa_m2i-api</sonar.projectKey>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<dependencies>
 		<dependency>
