@@ -81,4 +81,5 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         context: .
+        push: true
         tags: romainsessa/m2i-api:latest
