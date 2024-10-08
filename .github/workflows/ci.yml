@@ -58,7 +58,8 @@ jobs:
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} # this secret have to be configure on the GitHuB project settings
   docker-deploy:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
+    needs: code_quality
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 21
