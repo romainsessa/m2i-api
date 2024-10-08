@@ -28,7 +28,7 @@ class UserControllerTest {
 						MockMvcResultMatchers.status().isOk())
 				.andReturn();		
 		String resultStr = result.getResponse().getContentAsString();
-		assertEquals("Page for romain", resultStr);
+		assertEquals("OK", resultStr);
 	}
 	
 	@Test
@@ -43,7 +43,7 @@ class UserControllerTest {
 						MockMvcResultMatchers.status().isOk())
 				.andReturn();		
 		String resultStr = result.getResponse().getContentAsString();
-		assertEquals("romain is created.", resultStr);
+		assertEquals("OK", resultStr);
 	}
 	
 }

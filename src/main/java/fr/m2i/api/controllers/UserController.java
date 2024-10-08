@@ -11,14 +11,14 @@ public class UserController {
 
 	@GetMapping("/user/{username}")
 	public String getUserPage(@PathVariable("username") String username) {
-		String buildResult = "Page for " + username;
-		return buildResult;
+		System.out.println("Page for " + username);
+		return "OK";
 	}
 	
 	@PostMapping("/user")
 	public String postUser(@RequestBody String username) {
-		String buildResult = username + " is created.";
-		return buildResult;
+		System.out.println(username + " is created.");
+		return "OK";
 	}
 	
 }
